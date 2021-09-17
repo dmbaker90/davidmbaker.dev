@@ -1,3 +1,19 @@
-.current {
-  color: green;
+.background-gradient-1 {
+  background: linear-gradient(to bottom, black, #161D57);
+}
+
+.background-gradient-2 {
+  background: linear-gradient(to bottom, #161D57, #2E2E2E);
+}
+
+.intro-section{
+  padding: 10rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-section{
+  padding: 10rem 0;
+  width: 100%;
+  height: 100%;
 }

@@ -1,5 +1,55 @@
-<nav>
+<!-- <nav>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
-</nav>
+</nav> -->
+
+    <!-- START THE NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/david_baker.svg" alt="logo image">
+            <!-- <span>David</span> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript: scrollToId('#about-section');">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+          <a target="_blank" href="https://docs.google.com/document/d/16bnfc-lctNWxQeSi5fXEr8-MD7myj1t2rw-IhhRx9eY/edit?usp=sharing">
+            <button type="button" class="rounded-pill btn-rounded">Resume
+                <span>
+                  <i class="fas fa-download"></i>
+                </span>
+            </button>
+          </a>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
