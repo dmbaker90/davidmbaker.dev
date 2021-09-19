@@ -1,10 +1,7 @@
 ---
 ---
-
-@import "main";
+// IMPORT BOOTSTRAP 5 & CUSTOM OVERRIDES
 @import "custom";
-
-// IMPORT BOOTSTRAP 5
 @import "bootstrap/bootstrap";
 
 // IMPORT COMPONENTS
@@ -12,5 +9,6 @@
 @import "components/buttons";
 
 // IMPORT SECTIONS
+@import "main";
 @import "sections/navbar";
 @import "sections/footer";

@@ -10,6 +10,11 @@
   background: linear-gradient(to bottom, #25306A, #B7E3E7);
 }
 
+.background-gradient-4 {
+  background: linear-gradient(to bottom, #B7E3E7, #E9CDB7);
+}
+
+// INTRO SECTION
 .intro-section{
   padding: 10rem 0;
   width: 100%;
@@ -18,12 +23,14 @@
   background-repeat: repeat-x;
 }
 
+// ABOUT SECTION
 .about-section{
   padding: 10rem 0;
   width: 100%;
   height: 100%;
 }
 
+// SKILLS SECTION
 .skills-section {
   padding: 0 0 5rem 0;
 
@@ -48,3 +55,42 @@
   }
 }
 
+// PORTFOLIO SECTION
+.portfolio-section {
+  position: relative;
+  padding: 1rem 0;
+
+  &__content {
+      padding: 1rem;
+      margin-top: 0rem;
+
+      p {
+          font-size: 0.8rem;
+
+          @include media-breakpoint-up(lg){
+              font-size: 1rem;
+          }
+      }
+
+      @include media-breakpoint-up(lg){
+          margin-top: 3rem;
+      }
+
+      .icon {
+          font-size: 1.5rem;
+          color: $primary;
+
+          @include media-breakpoint-up(lg){
+              font-size: 2.5rem;
+          }
+      }
+  }
+
+  &__pic {
+      max-width: 100%;
+      img {
+        border-radius: 50px;
+        border: 3px solid black;
+      }
+  }
+}

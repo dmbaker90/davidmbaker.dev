@@ -45,6 +45,10 @@
     margin-bottom: 1rem;
 }
 
+.heading-line-dark::before, .heading-line-dark::after {
+    background-color: darkslategray;
+}
+
 // DISPLAY 3
 .display-3 {
     font-family: 'Poppins', sans-serif;
