@@ -1,0 +1,74 @@
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+// SOURCE / CREDIT: https://codepen.io/WebSonick/pen/vjmgu
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars {
+  background: url("../../assets/images/stars/stars.png") repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url("../../assets/images/stars/twinkling.png") repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+// .clouds{
+//     background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+//     z-index:3;
+
+//   -moz-animation:move-clouds-back 200s linear infinite;
+//   -ms-animation:move-clouds-back 200s linear infinite;
+//   -o-animation:move-clouds-back 200s linear infinite;
+//   -webkit-animation:move-clouds-back 200s linear infinite;
+//   animation:move-clouds-back 200s linear infinite;
+// }
+
+.moon-img {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
