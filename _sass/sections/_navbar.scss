@@ -12,12 +12,17 @@
 
     li {
         padding: 0 0.7rem;
+        border: 1px solid transparent;
     }
 
     a {
         color: $white !important;
         text-transform: capitalize;
         font-weight: 600;
+    }
+
+    li:hover{
+        border: 1px solid white;
     }
 }
 
