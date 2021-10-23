@@ -19,7 +19,7 @@
 }
 
 .background-gradient-5 {
-  background: linear-gradient(to bottom, #E9CDB7, #FF8C4C);
+  background: radial-gradient(ellipse at bottom, orangered 15%, #E9CDB7 70%);
   // #EAB1A0);
 }
 
@@ -103,4 +103,36 @@
         border: 3px solid black;
       }
   }
+}
+
+.mountains-relative {
+  position: relative;
+}
+
+.mountains-layer-1{
+  // position: relative;
+}
+
+.mountains-layer-2{
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+.mountains-layer-3{
+  position: absolute;
+  top: 58%;
+  width: 100%;
+}
+
+.mountains-layer-4{
+  position: absolute;
+  top: 90.5%;
+  width: 100%;
+}
+
+.mountains-layer-5 {
+  position: relative;
+  top: 90%;
+  width: 100%;
 }
