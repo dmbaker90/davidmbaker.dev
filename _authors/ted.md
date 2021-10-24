@@ -1,6 +1,6 @@
 ---
-short_name: ted
-name: Ted Doe
+short_name: David
+name: David Baker
 position: Writer
 ---
-Ted has been eating fruit since he was baby.
+David has been eating fruit since he was baby.
