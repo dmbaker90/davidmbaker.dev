@@ -109,10 +109,6 @@
   position: relative;
 }
 
-.mountains-layer-1{
-  // position: relative;
-}
-
 .mountains-layer-2{
   position: absolute;
   top: 25%;
@@ -135,4 +131,22 @@
   position: relative;
   top: 90%;
   width: 100%;
+}
+
+.bring-to-front {
+  position: relative;
+  z-index: 4;
+}
+
+.blog-section {
+  background: #0A223A;
+}
+
+.footer-section{
+  padding: 3rem 0;
+  background: #1F1825;
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -313,7 +313,7 @@ title: David Baker
                     <p class="lh-lg">Learned Bootstrap and assisted in the development of the professional portfolio
                         website for architect / designer <a href="https://yasmeenalmuhanna.com/">Yasmeen Almuhanna</a>.
                     </p>
-                    <a target="_blank" href="https://yasmeenalmuhanna.com/">
+                    <a target="_blank" href="https://yasmeenalmuhanna.com/" class="bring-to-front">
                         <button type="button" class="rounded-pill btn-rounded border-primary">View
                             <span>
                                 <i class="fas fa-arrow-right"></i>
@@ -370,6 +370,27 @@ title: David Baker
     </div>
 </section>
 
-<section class="after-mountains">
 
+<section id="blog-section" class="blog-section">
+    <div class="container">
+
+        <div class="row text-center text-white pb-5">
+            <h1 class="display-2">
+                <span class="display-2--intro">Latest Blog Posts</span>
+                <div class="heading-line"></div>
+            </h1>
+            <p class="lead text-capitalize fw-bold pb-5">Latest posts, click <a href="/blog.html">here</a> for the full
+                blog.
+            </p>
+
+            {% for post in site.posts %}
+            <div class="col-md-4">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p>{{ post.excerpt }}</p>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
 </section>
