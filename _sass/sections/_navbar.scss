@@ -4,7 +4,7 @@
 .menu {
     // @include gradient;
     // background: black;
-    position: absolute;
+    // position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -16,8 +16,8 @@
     }
 
     a {
-        color: $white !important;
-        text-transform: capitalize;
+        // color: $white !important;
+        // text-transform: capitalize;
         font-weight: 600;
     }
 

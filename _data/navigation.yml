@@ -1,8 +1,15 @@
 - name: Home
   link: /
 - name: About
-  link: /about.html
+  link: /#about
+- name: Skills
+  link: /#skills
+- name: Work
+  link: /#work
+- name: Portfolio
+  link: /#portfolio
 - name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+  link: /#blog
+  url: /blog.html
+- name: Contact
+  link: /#contact
