@@ -1,6 +1,7 @@
 ---
 layout: post
 author: David
+tags: jekyll code
 ---
 
 Welcome to my new site.  I previously had a Wordpless blog, but the site wasn't really worth the $5/month I was paying in hosting.  Plus, the management of the site was just a tedious excercise in using the Wordpress Admin Panel that didn't really teach me anything about programming.  When I discovered Jekyll I realized I could create exactly what I wanted: a personal website that doubles as a blog (without a database) and is hosted for free on Github pages.

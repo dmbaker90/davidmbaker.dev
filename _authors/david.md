@@ -3,4 +3,4 @@ short_name: David
 name: David Baker
 position: Writer
 ---
-David has been eating fruit since he was baby.
+David has been writing code for 10 years.
