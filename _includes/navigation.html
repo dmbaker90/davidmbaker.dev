@@ -1,5 +1,7 @@
 <!-- START THE NAVBAR SECTION -->
 
+{% include base.html %}
+
 {% if page.url == '/' %}
 {% assign navBarClasses = "navbar navbar-expand-lg navbar-dark menu position-absolute" %}
 {% else %}
@@ -9,7 +11,7 @@
 <nav class="{{navBarClasses}}">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="assets/images/david_baker.svg" alt="logo image">
+      <img src="{{base}}/assets/images/david_baker.svg" alt="logo image">
       <!-- <span>David</span> -->
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
