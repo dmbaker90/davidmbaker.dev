@@ -31,3 +31,9 @@
         height: 50px;
     }
 }
+
+.navbar {
+    @include media-breakpoint-down(lg){
+        background: black;
+    }
+}
