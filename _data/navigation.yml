@@ -12,4 +12,5 @@
   link: /#blog
   url: /blog.html
 - name: Contact
-  link: /#contact
+  link: /contact.html
+  url: /contact.html
