@@ -27,8 +27,10 @@ title: Blog
                 {% for post in site.posts %}
                 <div class="blog-card" onclick="location.href='{{post.url}}';">
                     <h2>{{ post.title }}</h2>
+                    {{post.date | date_to_string }}
                     {% assign author = site.authors | where: 'short_name', post.author | first %}
                     {% if author %}
+                    <span> - </span>
                     <a class="no-link-color" href="{{ author.url }}">{{ author.name }}</a>
                     {% endif %}
                     <p>{{ post.excerpt }}</p>
