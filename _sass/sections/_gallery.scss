@@ -1,0 +1,40 @@
+
+.gallery-background {
+    background:black;
+    padding: 2rem 0;
+}
+
+.album-wrapper {
+    cursor: pointer;
+    &:hover {
+        filter: grayscale(120);
+    }
+    .album-thumbnail-wrapper {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    
+        .album-label{
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            text-shadow: 0px 0px 15px black;
+            transform: translateY(-100%);
+        }
+        .album-thumbnail {
+            width: 100%;
+        }
+    }
+}
+
+.grow {
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    height: 0;
+    overflow: hidden;
+  }
