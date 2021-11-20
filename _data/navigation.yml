@@ -9,7 +9,7 @@
 - name: Portfolio
   link: /#portfolio
 - name: Blog
-  link: /#blog
+  link: /blog.html
   url: /blog.html
 - name: Gallery
   link: /gallery.html
