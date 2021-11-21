@@ -81,3 +81,12 @@
   .sidekick cite {font-size: 50%; text-align:start; top:50%; display: block;}
   .sidekick cite:before {content: ' \2015 '}
 
+
+.user-img-small {
+    width: 50px;
+    margin: 0 auto;
+    img {
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px var(--color-avatar-border);
+    }
+}
