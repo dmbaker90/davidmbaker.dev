@@ -1,61 +1,17 @@
 ---
-layout: default
+layout: blog
 title: Blog
 ---
-
-<div class="blog-main">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 user-section">
-                <div class="user-img mt-5">
-                    <img src="assets/images/david-pic-2.jpg" alt="david-img" class="img-fluid" />
-                </div>
-                <div class="user-info">
-                    <h3 class="text-center pt-2">David Baker</h3>
-                    <div><i class="fas fa-link"></i><a class="ps-2" href="https://www.davidmbaker.dev"
-                            target="_blank">https://davidmbaker.dev</a></div>
-                    <div><i class="fab fa-github"></i><a class="ps-2" href="https://github.com/dmbaker90"
-                            target="_blank">https://github.com/dmbaker90</a></div>
-                    <hr>
-                    <p>The purpose of this blog is to share my own thoughts, experiences, or observations on code I've
-                        written, books I've read, or anything else on my mind. It primarily serves as a reference for
-                        myself; learning something while knowing I will be writing about it helps me learn it. Likewise,
-                        writing about something I've recently learned helps me retain it.</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                {% for post in site.posts %}
-                <div class="blog-card" onclick="location.href='{{post.url}}';">
-                    <h2>{{ post.title }}</h2>
-                    {{post.date | date_to_string }}
-                    {% assign author = site.authors | where: 'short_name', post.author | first %}
-                    {% if author %}
-                    <span> - </span>
-                    <a class="no-link-color" href="{{ author.url }}">{{ author.name }}</a>
-                    {% endif %}
-                    <p>{{ post.excerpt }}</p>
-                    <a href="{{post.url}}">... read more</a>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="col-lg-3">
-                <div class="tag-cloud blog-card">
-                    <h2>Tag Cloud</h2>
-                    {% assign tags = site.tags | sort %}
-                    {% for tag in tags %}
-                    <span class="site-tag">
-                        <a href="/tag/{{ tag | first | slugify }}/"
-                            style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-                            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-                        </a>
-                    </span>
-                    {% endfor %}
-                </div>
-                <div class="twitter-xkcd blog-card">
-                    <a class="twitter-timeline" href="https://twitter.com/xkcd?ref_src=twsrc%5Etfw">Tweets by xkcd</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-        </div>
-    </div>
+{% for post in site.posts %}
+<div class="blog-card" onclick="location.href='{{post.url}}';">
+    <h2>{{ post.title }}</h2>
+    {{post.date | date_to_string }}
+    {% assign author = site.authors | where: 'short_name', post.author | first %}
+    {% if author %}
+    <span> - </span>
+    <a class="no-link-color" href="{{ author.url }}">{{ author.name }}</a>
+    {% endif %}
+    <p>{{ post.excerpt }}</p>
+    <a href="{{post.url}}">... read more</a>
 </div>
+{% endfor %}

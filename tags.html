@@ -1,0 +1,35 @@
+---
+title: Tags
+layout: blog
+---
+
+<style type="text/css" scoped>
+    .tag-section>* {
+        display: none;
+    }
+
+    .tag-section>section:target {
+        display: block;
+    }
+</style>
+
+{% for tag in site.tags %}
+<div class="tag-section">
+    <section id="tag-{{ tag[0] | replace: " ", " _" }}">
+        <h1 class="my-4">Posts tagged with "{{ tag[0] | escape }}"</h1>
+        {% for post in tag[1] %}
+        <div class="blog-card" onclick="location.href='{{post.url}}';">
+            <h2>{{ post.title }}</h2>
+            {{post.date | date_to_string }}
+            {% assign author = site.authors | where: 'short_name', post.author | first %}
+            {% if author %}
+            <span> - </span>
+            <a class="no-link-color" href="{{ author.url }}">{{ author.name }}</a>
+            {% endif %}
+            <p>{{ post.excerpt }}</p>
+            <a href="{{post.url}}">... read more</a>
+        </div>
+        {% endfor %}
+    </section>
+</div>
+{% endfor %}

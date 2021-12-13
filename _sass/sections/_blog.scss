@@ -1,6 +1,7 @@
 .blog-main {
     // margin: 0 auto;
     background: #F6F6F6;
+    padding-bottom: 50px;
 }
 
 .blog-card {
@@ -18,17 +19,21 @@
 
 .user-section {
     display: none;
+    position: sticky;
+    top: 100px;
     @include media-breakpoint-up(md){
         display: flex;
     }
     @include media-breakpoint-up(lg){
-        display: unset;
+        display: block;
     }
     .user-img {
         width: 200px;
         margin: 0 auto;
+        margin-top: 3em;
         @include media-breakpoint-up(lg){
             width: unset;
+            margin-top: 0;
         }
         img {
             border-radius: 50%;
@@ -89,4 +94,9 @@
         border-radius: 50%;
         box-shadow: 0 0 0 1px var(--color-avatar-border);
     }
+}
+
+.tag-and-twitter-column{
+    position: sticky;
+    top: 92px;
 }
