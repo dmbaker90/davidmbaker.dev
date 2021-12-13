@@ -17,5 +17,9 @@
 @import "sections/gallery";
 @import "sections/portfolio";
 
+// IMPORT EFFECTS
+@import "effects/shine";
+@import "effects/shake";
+
 // Code pygments for syntax highlighting
 @import "./pygment.css";

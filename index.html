@@ -80,55 +80,16 @@ title: David Baker
             <div class="heading-line"></div>
         </h1>
         <div class="row">
+
+            {% for item in site.data.skills %}
             <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/c-sharp.png" alt="C# Logo"
-                        title="C#" class="img-fluid"></div>
+                <div class="skills__logo-box shadow-sm shine-effect shake-effect"><img
+                        src="/assets/images/skills/{{item.img}}" alt="{{item.name}} Logo" title="{{item.name}}"
+                        class="img-fluid"></div>
             </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/angular.png" alt="Angular logo"
-                        title="Angular" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/dotnet.png" alt="Dot net logo"
-                        title=".NET" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/html5.png" alt="html5 logo"
-                        title="HTML5" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/jekyll.png" alt="Jekyll logo"
-                        title="Jekyll" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/mysql.png" alt="MYSQL logo"
-                        title="MYSQL" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/jquery.png" alt="jquery logo"
-                        title="JQUERY" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/sqlserver.png"
-                        alt="sqlserver logo" title="SqlServer" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/azure.webp" alt="Azure logo"
-                        title="Azure Dev Ops" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/github.png" alt="Github logo"
-                        title="Github" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/flutter.png" alt="Flutter logo"
-                        title="Flutter" class="img-fluid"></div>
-            </div>
-            <div class="col-6 col-md-2 col-lg-1">
-                <div class="skills__logo-box shadow-sm"><img src="/assets/images/skills/postgres.png"
-                        alt="Postgres logo" title="Postgres" class="img-fluid"></div>
-            </div>
+            {% endfor %}
         </div>
+
     </div>
 </section>
 

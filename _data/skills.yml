@@ -1,0 +1,30 @@
+- name: C#
+  img: c-sharp.png
+- name: Angular
+  img: angular.png
+- name: .NET
+  img: dotnet.png
+- name: HTML 5
+  img: html5.png
+- name: Jekyll
+  img: jekyll.png
+- name: MySQL
+  img: mysql.png
+- name: JQuery
+  img: jquery.png
+- name: SQL Server
+  img: sqlserver.png
+- name: Azure Dev Ops
+  img: azure.webp
+- name: Github
+  img: github.png
+- name: Flutter
+  img: flutter.png
+- name: Postgres
+  img: postgres.png
+- name: NextJS
+  img: nextjs.png
+- name: Firebase
+  img: firebase.png
+- name: Tailwind CSS
+  img: tailwind.png
