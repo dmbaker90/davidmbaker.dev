@@ -5,7 +5,7 @@ tags: books
 title: "Books I've Read in 2021"
 ---
 
-This is not a complete list since I've forgotten what I read earlier in the year before my blog.  But that's ok, because I did just read *Forgetting: The Benefits of Not Remembering* which says that forgetting things is an important and healthy part of brain function.  So I'm pretty healthy.
+This is not a complete list since I've forgotten what I read earlier in the year before my blog.  But that's ok, because I did just read *Forgetting: The Benefits of Not Remembering* which argues that forgetting things is an important and healthy part of brain function.  So I'm pretty healthy.
 
 * 4 Hour Workweek
 * Final Frontiersman
