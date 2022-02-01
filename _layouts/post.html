@@ -22,6 +22,12 @@ layout: default
                 - <a href="{{ author.url }}">{{ author.name }}</a>
                 {% endif %}
             </p>
+            <p>
+                {% if post.tags.size > 0 %}
+                Tag{% if post.tags.size > 1 %}s{% endif %}:
+                {{ post.tags | sort | join: ", " }}
+                {% endif %}
+            </p>
             {{ content }}
         </div>
         <div class="col-xl-3">
