@@ -26,6 +26,19 @@ layout: blog
             <span> - </span>
             <a class="no-link-color" href="{{ author.url }}">{{ author.name }}</a>
             {% endif %}
+            <p>
+                {% if post.tags.size > 0 %}
+                Tag{% if post.tags.size > 1 %}s{% endif %}:
+                <!-- {{ post.tags | sort | join: ", " }} -->
+                {% for tag in post.tags %}
+                <span class="site-tag">
+                    <a href="/tags#tag-{{ tag | slugify }}" onclick="stopPropagation(event);">
+                        {{ tag[0] | replace:'-', ' ' }} {{ tag }}
+                    </a>
+                </span>
+                {% endfor %}
+                {% endif %}
+            </p>
             <p>{{ post.excerpt }}</p>
             <a href="{{post.url}}">... read more</a>
         </div>

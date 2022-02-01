@@ -24,3 +24,7 @@ function growDiv(id) {
   }
   // document.getElementById("more-button").value = document.getElementById("more-button").value == 'Read more' ? 'Read less' : 'Read more';
 }
+
+function stopPropagation(event) {
+  event.stopPropagation()
+}

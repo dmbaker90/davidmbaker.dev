@@ -1,7 +1,7 @@
 ---
 layout: post
 author: David
-tags: DigitalOcean Linux
+tags: digitalocean linux
 title: "Digital Ocean SSH Firewall: Connection Timed Out"
 ---
 
