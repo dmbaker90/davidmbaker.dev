@@ -25,7 +25,14 @@ layout: default
             <p>
                 {% if page.tags.size > 0 %}
                 Tag{% if page.tags.size > 1 %}s{% endif %}:
-                {{ page.tags | sort | join: ", " }}
+                <!-- {{ page.tags | sort | join: ", " }} -->
+                {% for tag in page.tags %}
+                <span class="site-tag">
+                    <a href="/tags#tag-{{ tag | first | slugify }}">
+                        {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                    </a>
+                </span>
+                {% endfor %}
                 {% endif %}
             </p>
             {{ content }}
