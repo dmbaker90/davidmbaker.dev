@@ -1,7 +1,7 @@
 ---
 layout: post
 author: David
-tags: code
+tags: code breakingnewsbot
 ---
 
 This post is going to cover some of the challenges I faced when making my biased news aggregator [Breaking News Bot](https://www.breakingnewsbot.com).  I will probably make a follow up post about how it was coded.
