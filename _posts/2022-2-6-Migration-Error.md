@@ -7,9 +7,7 @@ title: "Unable to resolve service for type 'Microsoft.EntityFrameworkCore.Storag
 
 I just had the rare experience of googling a programming error and only getting 1 result, which also happened to be in a foreign language:
 
-~~~ c#
-Unable to resolve service for type 'Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies' while attempting to activate 'MySql.EntityFrameworkCore.Storage.Internal.MySQLTypeMappingSource'
-~~~
+### **Unable to resolve service for type 'Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies' while attempting to activate 'MySql.EntityFrameworkCore.Storage.Internal.MySQLTypeMappingSource'**
 
 ![Google](/assets/images/posts/Google1.png "Google"){:width="100%"}
 
