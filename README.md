@@ -8,3 +8,4 @@ View here: https://www.davidmbaker.dev
 
 1. bundle install
 2. bundle exec jekyll serve
+3. bundle exec jekyll serve --drafts

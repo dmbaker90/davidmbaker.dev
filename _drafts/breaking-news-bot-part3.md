@@ -18,3 +18,18 @@ The problems continue.
 * Forbes appears to have RSS feeds that haven't been updated in ages
 * USA today includes clutter in their feeds.  Just "News Items" that link to their categories
 * The Atlantic includes their entire article in the rss feed, not just the description and a link.  That's especially weird since they have a paywall
+* Bloomberg straight up deliberately removed their RSS feeds
+* APNews doesn't have one!
+
+
+Mon, 05 Oct 2009 08:00:06 GMT
+Tue, 8 Feb 2022 15:20:02 EST
+
+
+I tried to honor Terms of Use when I saw them, for instance telegraph.co.uk does not allow you to aggregate and publish the RSS feed.  I don't think that makes sense on their part but I removed their feed anway.
+
+Handy dandy regex I wrote
+
+Now I can specifically subscribe to http://rssfeeds.detroitnews.com/detroit/nation and not get local Detroit news, which gives me a good source for .center?... material. A problem I wrote about earlier
+
+I actually think that the less well known news outlets have more standardized and working rss feeds. My guess is that they are putting more effort into getting their content out there in every possible way, whereas the established sources might not really care about something like a RSS reader.

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html style="font-size: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/carbon.js"></script>
+		<!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+		<meta name="msapplication-TileImage" content="/content/images/logo.png">
+		<link rel="icon" href="https://dotnetfiddle.net/content/images/icon_24.png">
+		<meta charset="utf-8">
+		<title>C# PlayGround | C# Online Compiler | .NET Fiddle</title>
+		
+	<link href="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/font-awesome.css" rel="stylesheet">
+	
+
+		<meta name="keywords" content=".NET, DotNet, C#, VB.NET, F#, CSharp, VbNet, FSharp, SandBox, Visual Studio, Fiddle, Code Snippet">
+		<meta name="description" content="C# PlayGround | Test your C# code online with .NET Fiddle code editor.">
+		<meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0">
+		
+	<link href="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/bootstrap.css" rel="stylesheet">
+
+	<link href="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/desktop.css" rel="stylesheet">
+
+
+	<style type="text/css">
+		.ui-menu {
+			display: inline-block;
+			position: absolute;
+			top: 360px;
+			left: 15px;
+			max-width: 350px;
+			z-index: 1000;
+		}
+
+		.tab-content {
+			padding-top: 40px;
+		}
+
+		.container {
+			padding-top: 15px;
+		}
+
+		.vcenter {
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+			margin-right: -4px;
+		}
+
+		.vtop {
+			display: inline-block;
+			vertical-align: top;
+			/*margin-top: 20px;*/
+			float: none;
+			margin-right: -4px;
+		}
+
+        #login-modal .modal-body > a {
+            font-size: 17px;
+            color: #333;
+            width: 100%;
+            display: block;
+            text-align: center;
+            border: 1px solid #efefef;
+            border-radius: 10px;
+            padding: 5px;
+            background: #f7f7f7;
+            margin-bottom: 5px
+        }
+		
+        #login-modal .modal-body > a:hover {
+            color: #0077CF;
+            transition: .3s
+        }
+
+        .welly {
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            border: 1px solid #efefef;
+            margin-top: 5px;
+            padding: 9px
+        }
+
+        .access-type-container button {
+            text-align: left;
+        }
+        .share-link {
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+        .share-widget-output {
+            margin-top: 6px;
+        }
+
+		.brand-logo {
+			margin: 0;
+			margin-top: 1px;
+		}
+
+	</style>
+	
+	
+	<link href="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/codemirrorcss.css" rel="stylesheet">
+
+	
+	<link href="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/csharpcolors.css" rel="stylesheet">
+
+
+	
+
+
+	</head>
+<body style="visibility: visible;" cz-shortcut-listen="true">
+	<div class="container">
+		
+
+
+
+
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
+			<div class="modal-dialog" style="width: 400px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="login-modal-label">Log in</h4>
+					</div>
+					<div class="modal-body">
+						<span class="danger" id="login-message"></span>
+						<a href="https://dotnetfiddle.net/Account/LogIn?loginType=3" class="remote-login" data-type="3" rel="nofollow">
+	<i class="fa fa-twitter"></i>
+	Twitter
+</a>
+<a href="https://dotnetfiddle.net/Account/LogIn?loginType=2" class="remote-login" data-type="2" rel="nofollow">
+	<i class="fa fa-envelope-o"></i>
+	Gmail
+</a>
+<a href="https://dotnetfiddle.net/Account/LogIn?loginType=1" class="remote-login" data-type="1" rel="nofollow">
+	<i class="fa fa-facebook-square"></i>
+	Facebook
+</a>
+<br>
+<div class="welly">
+	<span style="font-size: 17px; width:100%;text-align: center;display: inline-block;">
+		<i class="dnf-icon"> </i><a href="https://dotnetfiddle.net/" target="_blank">.NET Fiddle</a> and <i class="dna-icon"> </i><a href="https://dotnetcademy.net/" target="_blank">.NET Academy</a><br> shared account
+	</span>
+<form action="/Account/LocalLogin" data-ajax="true" data-ajax-begin="loginRequest" data-ajax-method="POST" data-ajax-success="loginResponse" id="form0" method="post" novalidate="novalidate">		<div class="form-group">
+			<input class="form-control" data-val="true" data-val-email="Invalid email format." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email" type="text">
+			<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+		</div>
+		<div class="form-group">
+			<input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password">
+			<span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+		</div>
+		<div class="row form-group" style="padding-top: 0;">
+			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+				<div class="checkbox">
+					<label>
+						<input data-val="true" data-val-required="The Remember me field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false"> Remember me
+						<span class="field-validation-valid" data-valmsg-for="RememberMe" data-valmsg-replace="true"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right">
+				<button type="submit" class="btn btn-default" data-loading-text="Logging in...">Log in</button>
+			</div>
+		</div>
+</form></div>
+
+						<div class="row text-center">
+							<a href="https://dotnetfiddle.net/SignUp">Sign up</a>&nbsp;or&nbsp;<a href="https://dotnetfiddle.net/PasswordReset" rel="nofollow">Reset password</a>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div class="navbar navbar-default navbar-fixed-top" id="top-navbar">
+	<div class="navbar-left-container hidden-xs hidden-sm hidden-md">
+		<h1 class="brand-logo"><a href="https://dotnetfiddle.net/" class="logo navbar-brand"><img src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/logo.png" alt=".NET Fiddle"></a></h1>
+	</div>
+	<div class="navbar-center-container">
+				<div class="btn-group navbar-btn">
+					<a class="btn btn-default" href="https://dotnetfiddle.net/">
+						<span class="glyphicon glyphicon-chevron-left"></span> Back To Editor
+					</a>
+				</div>
+
+	<div class="navbar-center-container">
+		<div class="btn-group navbar-btn">
+			<button class="btn btn-default" id="new-button" type="button">
+					<span class="glyphicon glyphicon-file"></span> New
+				</button>
+				<button class="btn btn-default" id="save-button" data-loading-text="Saving..." type="button" style="display: none;">
+					<span class="glyphicon glyphicon-floppy-disk"></span> Save
+				</button>
+				<button class="btn btn-default" id="fork-button" data-loading-text="Forking..." type="button">
+					<span class="glyphicon glyphicon-random"></span> Fork
+				</button>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;
+			<div class="btn-group navbar-btn">
+				<button class="btn btn-default" id="run-button" type="button">
+					<span class="glyphicon glyphicon-play"></span> Run
+				</button>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;
+			<div class="btn-group navbar-btn">
+				<button class="btn btn-default" id="Share" type="button">
+					<span class="glyphicon glyphicon-share"></span> Share
+				</button>
+				<button class="btn btn-default" type="button" onclick="collaboration.init(); TogetherJS(this); return false;" value="Collaborate" id="togetherjs">
+					<span class="glyphicon glyphicon-user"></span> Collaborate
+				</button>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;
+			<div class="btn-group navbar-btn btn-tidyup">
+				<a href="#" class="btn btn-default" id="tidyup-button">
+					<span class="glyphicon glyphicon-check"></span> Tidy Up
+				</a>
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="tidyup-extra">
+					 <span class="caret"></span>
+				</button>
+				<ul id="tidyup-menu" class="dropdown-menu">
+					<li><a href="#" id="convert-button" target="_blank" style="display: block;" class="show"><span class="glyphicon glyphicon-refresh"></span> Convert To VB.NET</a></li>
+					<li><a href="#" id="viewil-button" class="show"><span class="glyphicon glyphicon-flash"></span> View IL</a></li>
+				</ul>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="btn-group navbar-btn">
+			<a class="btn btn-default" type="button" href="https://dotnetfiddle.net/GettingStarted/">
+				<span class="glyphicon glyphicon glyphicon-book"></span> Getting Started
+			</a>
+		</div>
+		<div class="btn-group navbar-btn">
+			<a class="btn btn-default" type="button" href="https://dotnetfiddle.net/Search">
+				<span class="glyphicon glyphicon glyphicon-search"></span>
+			</a>
+		</div>
+        </div>
+	</div>
+	<div class="navbar-right-container navbar-right">
+		<div class="btn-group navbar-btn user-info">
+				
+					
+	<a class="user-name" id="login-button" href="#">
+		Log in</a>
+	<a class="user-name" id="signup-button" href="https://dotnetfiddle.net/SignUp">
+		Sign up
+	</a>
+
+				
+		</div>
+		<span class="navbar-name-separator">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<div class="btn-group navbar-btn">
+			
+				<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-align-justify"></span>
+				</button>
+			<ul class="dropdown-menu academy-dropdown-menu">
+
+					<li><a href="https://dotnetfiddle.net/about" id="about-btn" data-href="/Home/GetAboutCode">About</a></li>
+					<li><a href="https://twitter.com/dotnetfiddle" id="twitter-btn" target="_blank">Twitter</a></li>
+					<li><a href="https://dotnetcademy.net/" id="academy-btn" target="_blank">.NET Academy</a></li>
+					<li><a href="https://chrome.google.com/webstore/detail/net-fiddle/ohjcieidjalbkdciooknjhkfemfajpjc" id="chrome-ext-btn" target="_blank">Chrome Ext</a></li>
+					<li><a href="https://dotnetfiddle.uservoice.com/" id="user-voice-btn" target="_blank">User Voice</a></li>
+					<li><a href="javascript:void(0);" id="support-btn" onclick=" showClassicWidget() ">Support</a></li>
+					<li><a href="https://dotnetfiddle.net/Roadmap">Roadmap</a></li>
+					<li><a href="https://dotnetfiddle.net/Terms">Terms</a></li>
+					<li><a href="https://dotnetfiddle.net/PrivacyPolicy">Privacy Policy</a></li>
+					<li><a href="https://dotnetfiddle.net/contact">Contact Us</a></li>
+
+			</ul>
+			
+		</div>
+	</div>
+</div>
+<div class="main docked">
+	<div class="container">
+    
+		
+
+
+
+
+
+
+<form action="/srx9kM" id="CodeForm" method="post" onsubmit="return false;" novalidate="novalidate"><div id="share-dialog" class="sub-dialog">
+	<span><b>Share Link</b></span><br>
+	<input class="share-input share-link" id="ShareLink" name="ShareLink" onclick="this.select()" readonly="readonly" type="text">
+	
+	<span class="clipboard-status">Copied to clipboard</span>
+	<a href="javascript:copyToClipboard('#ShareLink');" class="copy-clipboard" title="Copy to Clipboard"></a>
+	<a href="javascript:void(0);" class="email-share" id="email-share" title="Send to Email"></a>
+	<a href="#" class="twitter-share" title="Share to Twitter"></a>
+	<a href="#" class="facebook-share" title="Share to Facebook"></a>
+	<div id="email-form">
+		<input class="share-input" data-val="true" data-val-email="*" data-val-required="*" id="email" name="email" placeholder="to email address" type="text">
+		<input type="button" class="btn" style="font-size: 11px; padding: 4px 10px;" value="Send" id="email-send-btn">
+		<span id="email-status"></span>
+	</div>
+	<div style="position: relative;">
+		<span><b>Embed on Your Page</b></span><br>
+		<span class="clipboard-status-widget">Copied to clipboard</span>
+		<input class="share-input share-widget-output" id="EmbedLink" name="EmbedLink" onclick="this.select()" readonly="readonly" type="text">
+		
+		<a href="javascript:copyToClipboard('#EmbedLink');" class="copy-clipboard" title="Copy to Clipboard"></a>
+		<button id="widget-preview" type="button" class="btn" style="padding: 4px 10px; position: absolute; top: 20px; left: 268px;">Preview</button>
+
+	</div>
+	<div>
+		<a href="#" class="advanced-widgetbuilder" id="widget-builder" style="color: #428bca;margin-top: 10px; font-size: 11px;">Advanced Widget Builder</a>
+	</div>
+	<div class="loading-layer">
+		<img src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/ajax-loader.gif">
+	</div>
+</div>
+	 <!-- Console -->
+    <input type="hidden" id="OriginalConsole" value="using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine(&quot;Hello World&quot;);
+	}
+}">
+	<!-- Script -->	
+    <input type="hidden" id="OriginalScript" value="">
+    <!-- Mvc -->
+    <input type="hidden" id="OriginalModel">
+    <input type="hidden" id="OriginalView">
+    <input type="hidden" id="OriginalController">
+<input id="OriginalFiddleId" name="OriginalFiddleId" type="hidden" value="srx9kM"><input id="OriginalNuGetPackageVersionIds" name="OriginalNuGetPackageVersionIds" type="hidden" value=""><input data-val="true" data-val-number="The field TimeOffset must be a number." data-val-required="The TimeOffset field is required." id="timezone" name="TimeOffset" type="hidden" value="1">    <input id="NuGetPackageVersionIds" type="hidden" value="">
+    <div class="main docked">
+        <div class="expander"><span class="glyphicon glyphicon-chevron-right"></span></div>
+		<div class="sidebar unselectable">
+	<div class="sidebar-block">
+		<button class="btn btn-default btn-xs btn-sidebar-toggle" type="button">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</button>
+		<button class="btn btn-default btn-xs btn-sidebar-pin" type="button">
+			<span class="glyphicon glyphicon-pushpin"></span>
+		</button>
+		<div class="text-center"><strong>Options</strong></div>
+	</div>
+	<div class="sidebar-block">
+		<span><strong><label for="Language">Language</label>:</strong></span>
+		
+		
+		<select class="sidebar-select form-control input-sm togetherjs" data-val="true" data-val-required="The Language field is required." id="Language" name="Language"><option value="CSharp" selected="selected">C#</option>
+<option value="VbNet">VB.NET</option>
+<option value="FSharp">F#</option>
+</select>
+		
+		
+	</div>
+	<div class="sidebar-block">
+		<span><strong><label for="ProjectType">Project Type</label>:</strong></span>
+		
+		
+		<select class="sidebar-select form-control input-sm togetherjs" data-val="true" data-val-required="The Project Type field is required." id="ProjectType" name="ProjectType"><option value="Console" selected="selected">Console</option>
+<option value="Script">Script</option>
+<option value="Mvc">MVC</option>
+<option value="Nancy">Nancy</option>
+</select>
+		
+		
+	</div>
+	
+	<div class="sidebar-block">
+		<span><strong><label for="Compiler">Compiler</label>:</strong></span>
+		
+		<select class="sidebar-select form-control input-sm togetherjs" data-val="true" data-val-required="The Compiler field is required." id="Compiler" name="Compiler"><option value="Net45" selected="selected">.NET 4.7.2</option>
+<option value="Roslyn">Roslyn 4.0</option>
+<option value="NetCore22">.NET 6</option>
+</select>
+		
+	</div>
+	
+	
+	
+	<div class="sidebar-block">
+		<div class="nuget-packages-wrap">
+			<b>NuGet Packages: <a href="http://dotnetfiddle.uservoice.com/knowledgebase/articles/298018" class="pull-right" target="_blank"><i class="glyphicon glyphicon-info-sign"></i></a></b>
+			<div class="nuget-panel hide-link" style="position: relative;">
+				<ul class="nuget-packages"></ul>
+				<input type="search" class="new-package form-control input-sm" placeholder="Package name...">
+				<a href="javascript:void(0);" class="add-package">Add Another</a>
+				<div style="display:none;" class="nuget-search-spinner"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sidebar-block autorun">
+		<span><strong>Auto Run:</strong></span>
+		<br>
+		<label><input id="IsAutoRun_Yes" name="IsAutoRun" type="radio" value="True">&nbsp;Yes</label>
+		<label><input id="IsAutoRun_No" name="IsAutoRun" type="radio" checked="checked" value="False">&nbsp;No</label>
+	</div>
+
+	<div class="sidebar-block ad">
+		<script async="" type="text/javascript" src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/carbon_002.js" id="_carbonads_js"></script>
+	</div>
+
+		<div class="sidebar-menu">
+			<ul>
+				<li><a href="https://dotnetcademy.net/" target="_blank">.NET Academy</a></li>
+				<li><a href="http://jobs.dotnetfiddle.net/" target="_blank">.NET Jobs</a></li>
+				<li><a href="javascript:void(0);" id="support-btn" onclick=" showClassicWidget() ">Support</a></li>
+				<li><a href="https://dotnetfiddle.net/Roadmap">Roadmap</a></li>
+				<li><a href="https://dotnetfiddle.net/Terms">Terms</a></li>
+				<li><a href="https://dotnetfiddle.net/contact">Contact us</a></li>
+			</ul>
+		</div>
+</div>
+		<div class="status-line">
+			<input id="fiddle-name" name="Name" type="hidden" value="C# PlayGround">
+			<div class="name-container"><span>C# PlayGround by <a href="https://dotnetfiddle.net/Authors/90505/Alen%20Vadassery">Alen Vadassery</a></span></div>
+			<div class="access-type-container" style="display: none;">
+				Access: 
+				<div class="btn-group">			
+					<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+						<span>Public</span>&nbsp;<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+							<li><a href="#" data-value="Public">Public</a></li>
+							<li><a href="#" data-value="OnlyWithLink">Only With Link</a></li>
+					</ul>
+				</div>
+				<input data-val="true" data-val-required="The Access type field is required." id="access-type" name="AccessType" type="hidden" value="Public">
+			</div>
+			
+		</div>
+        <div class="content">
+    <div class="layout-container" style="position: relative; height: 599px;">
+        <div class="pane" style="position: absolute; z-index: 1; top: 0px; height: 330px; width: 1344px;">
+            <textarea id="Console" class="code-block">using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+		
+		string s = "\n                    \n                        \n        
+                    \n                                \n                
+            \n                            \n                            
+    (Natural News) Former government geological expert and deep 
+underground military base engineer Phil Schneider was murdered 
+(executed) after going public in 1995 with shocking details of what he 
+knew. According to Schneider, a vast network of 133 underground military
+ bases had already been constructed by 1995, and they were connected by 
+levitation trains that traveled...                            \n        
+                \n                    \n                ";
+	
+		
+		var x = s.IndexOf("\n");
+		if (s != null &amp;&amp; s.IndexOf("\n") &gt; 0)
+            {
+                s = s.Replace("\n", " ").Trim();
+            }
+	}	
+}</textarea>
+        <div class="pane-overlay"></div><div class="CodeMirror cm-s- CodeMirror-focused" style="width: 100%;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 235.5px; left: 134.5px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="none" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="right: 0px; left: 46px; display: block;"><div style="height: 100%; min-height: 1px; width: 4518px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 46px; margin-bottom: -10px; border-right-width: 20px; min-height: 286px; min-width: 4518px; padding-right: 0px; padding-bottom: 10px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 88.5px; top: 231.5px; height: 15.4333px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">using</span> <span class="cm-variable">System</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">public</span> <span class="cm-keyword">class</span> <span class="cm-def">Program</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">public</span> <span class="cm-keyword">static</span> <span class="cm-keyword">void</span> <span class="cm-variable">Main</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">Console</span>.<span class="cm-variable">WriteLine</span>(<span class="cm-string">"Hello World"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-type">string</span> <span class="cm-variable">s</span> <span class="cm-operator">=</span> <span class="cm-string">"\n                    \n                        \n                            \n                                \n                            \n                            \n                                (Natural News) Former government geological expert and deep underground military base engineer Phil Schneider was murdered (executed) after going public in 1995 with shocking details of what he knew. According to Schneider, a vast network of 133 underground military bases had already been constructed by 1995, and they were connected by levitation trains that traveled...                            \n                        \n                    \n                "</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">var</span> <span class="cm-def">x</span> <span class="cm-operator">=</span> <span class="cm-variable">s</span>.<span class="cm-variable">IndexOf</span>(<span class="cm-string">"\n"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">if</span> (<span class="cm-variable">s</span> <span class="cm-operator">!=</span> <span class="cm-atom">null</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">s</span>.<span class="cm-variable">IndexOf</span>(<span class="cm-string">"\n"</span>) <span class="cm-operator">&gt;</span> <span class="cm-number">0</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">            {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">                <span class="cm-variable">s</span> <span class="cm-operator">=</span> <span class="cm-variable">s</span>.<span class="cm-variable">Replace</span>(<span class="cm-string">"\n"</span>, <span class="cm-string">" "</span>).<span class="cm-variable">Trim</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">            }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tab" role="presentation" cm-text="	">    </span>}<span class="cm-tab" role="presentation" cm-text="	">   </span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 20px; width: 1px; border-bottom: 10px solid transparent; top: 286px;"></div><div class="CodeMirror-gutters" style="height: 328px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></div><div style="z-index: 100; position: absolute; user-select: none; cursor: n-resize; top: 330px; width: 1344px;" class="hsplitbar" unselectable="on"><a href="javascript:void(0)" accesskey="T" tabindex="0" title="hsplitbar"></a></div>
+        <div class="output-container" style="position: absolute; z-index: 1; top: 336px; height: 194px; width: 1344px;">
+            <div class="output-pane pane" style="position: absolute; z-index: 1; left: 0px; width: 1144px; height: 194px;">
+                <div id="output" class="output">Hello&nbsp;World</div>
+                <div id="input" style="display: none;" contenteditable="true"></div>
+            <div class="pane-overlay"></div></div><div class="vsplitbar" style="position: absolute; z-index: 100; user-select: none; cursor: e-resize; left: 1144px; height: 194px;" unselectable="on"><a href="javascript:void(0)" accesskey="R" tabindex="0" title="vsplitbar"></a></div>
+            <div class="stats-pane pane" style="position: absolute; z-index: 1; left: 1150px; width: 194px; height: 194px;">
+                <div id="stats" style="height: 100%; font-size: 13px;"><table><tbody><tr><td>Last Run: </td><td>8:40:05 pm</td></tr><tr><td>Compile: </td><td>0.203s</td></tr><tr><td>Execute: </td><td>0s</td></tr><tr><td>Memory: </td><td>0b</td></tr><tr><td>CPU: </td><td>0.016s</td></tr></tbody></table></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            <div class="pane-overlay"></div></div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="modal fade" id="preload-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Loading packages and dependencies</h4>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade" id="widget-builder-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="width: 960px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Advanced Widget Builder</h4>
+				</div>
+				<div class="modal-body">
+					<iframe style="border: 0px;" id="widget-builder-iframe" width="900px" height="545px"></iframe>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>	
+</form><div class="overlay" unselectable="on" onselectstart="return false;" onmousedown="return false;"></div>
+
+
+<script type="text/javascript" async="" src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/zRSaFn7aHgIFLfnHWxw5EA.js"></script><script async="" src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/analytics.js"></script><script id="sidebar-template" type="text/x-handlebars-template">
+	<div class="sidebar-block">
+		<button class="btn btn-default btn-xs btn-sidebar-toggle" type="button">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</button>
+		<button class="btn btn-default btn-xs btn-sidebar-pin" type="button">
+			<span class="glyphicon glyphicon-pushpin"></span>
+		</button>
+		<div class="text-center"><strong>Options</strong></div>
+	</div>
+	<div class="sidebar-block">
+		<span><strong><label for="Language">Language</label>:</strong></span>
+		{{#ifCond compiler 'NetCore22'}}
+		<br /><span id="StaticProjectType">{{language}}</span>
+		{{else}}
+		{{#select language}}
+		<select class="sidebar-select form-control input-sm togetherjs" data-val="true" data-val-required="The Language field is required." id="Language" name="Language"><option selected="selected" value="CSharp">C#</option>
+<option value="VbNet">VB.NET</option>
+<option value="FSharp">F#</option>
+</select>
+		{{/select}}
+		{{/ifCond}}
+	</div>
+	<div class="sidebar-block">
+		<span><strong><label for="ProjectType">Project Type</label>:</strong></span>
+		{{#ifExpr "language=='FSharp' || compiler=='NetCore22'"}}
+		<br /><span id="StaticProjectType">{{projectType}}</span>
+		{{else}}
+		{{#select projectType}}
+		<select class="sidebar-select form-control input-sm togetherjs" data-val="true" data-val-required="The Project Type field is required." id="ProjectType" name="ProjectType"><option selected="selected" value="Console">Console</option>
+<option value="Script">Script</option>
+<option value="Mvc">MVC</option>
+<option value="Nancy">Nancy</option>
+</select>
+		{{/select}}
+		{{/ifExpr}}
+	</div>
+	{{#ifExpr "language!='FSharp' && projectType!='Script' && projectType!='Nancy'"}}
+	<div class="sidebar-block">
+		<span><strong><label for="Compiler">Compiler</label>:</strong></span>
+		{{#select compiler}}
+		<select class="sidebar-select form-control input-sm togetherjs" data-val="true" data-val-required="The Compiler field is required." id="Compiler" name="Compiler"><option selected="selected" value="Net45">.NET 4.7.2</option>
+<option value="Roslyn">Roslyn 4.0</option>
+<option value="NetCore22">.NET 6</option>
+</select>
+		{{/select}}
+	</div>
+	{{/ifExpr}}
+	{{#if layoutType}}
+	<div class="sidebar-block">
+		<span><strong><label for="LayoutType">Layout Type</label>:</strong></span>
+		{{#select layoutType}}
+		<select id="LayoutType" class="sidebar-select form-control input-sm togetherjs">
+			<option value="sections">Sections</option>
+			<option value="tabs">Tabs</option>
+		</select>
+		{{/select}}
+	</div>
+	{{/if}}
+	{{#ifExpr "language=='FSharp' || (projectType!='Script' && compiler!='Roslyn')"}}
+	<div class="sidebar-block">
+		<div class="nuget-packages-wrap">
+			<b>NuGet Packages: <a href="http://dotnetfiddle.uservoice.com/knowledgebase/articles/298018" class="pull-right" target="_blank"><i class="glyphicon glyphicon-info-sign"></i></a></b>
+			<div class="nuget-panel hide-link" style="position: relative;">
+				<ul class="nuget-packages"></ul>
+				<input type="search" class="new-package form-control input-sm" placeholder="Package name..." />
+				<a href="javascript:void(0);" class="add-package">Add Another</a>
+				<div style="display:none;" class="nuget-search-spinner"></div>
+			</div>
+		</div>
+	</div>
+	{{/ifExpr}}
+	<div class="sidebar-block autorun">
+		<span><strong>Auto Run:</strong></span>
+		<br>
+		<label><input id="IsAutoRun_Yes" name="IsAutoRun" type="radio" {{#if isAutoRun}} checked="checked" {{/if}} value="True" />&nbsp;Yes</label>
+		<label><input id="IsAutoRun_No" name="IsAutoRun" type="radio" {{#unless isAutoRun}} checked="checked" {{/unless}} value="False" />&nbsp;No</label>
+	</div>
+
+	<div class="sidebar-block ad">
+		<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DC27Y&placement=dotnetfiddlenet" id="_carbonads_js"/>
+	</div>
+
+		<div class="sidebar-menu">
+			<ul>
+				<li><a href="https://dotnetcademy.net/" target="_blank">.NET Academy</a></li>
+				<li><a href="http://jobs.dotnetfiddle.net/" target="_blank">.NET Jobs</a></li>
+				<li><a href="javascript:void(0);" id="support-btn" onclick=" showClassicWidget() ">Support</a></li>
+				<li><a href="/Roadmap">Roadmap</a></li>
+				<li><a href="/Terms">Terms</a></li>
+				<li><a href="/contact">Contact us</a></li>
+			</ul>
+		</div>
+</script>
+
+<script id="main-console-template" type="text/x-handlebars-template">
+    <div class="layout-container">
+        <div class="pane">
+            <textarea id="Console" class="code-block">{{codeBlocks.Console}}</textarea>
+        </div>
+        <div class="output-container">
+            <div class="output-pane pane">
+                <div id="output" class="output"></div>
+                <div id="input" contenteditable="true"></div>
+            </div>
+            <div class="stats-pane pane">
+                <div id="stats" style="height: 100%; display: none; font-size: 13px;"></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="main-script-template" type="text/x-handlebars-template">
+    <div class="layout-container">
+        <div class="pane">
+            <textarea id="Script" class="code-block">{{codeBlocks.Script}}</textarea>
+        </div>
+        <div class="output-container">
+            <div class="output-pane pane">
+                <div id="output" class="output"></div>
+                <div id="input" contenteditable="true"></div>
+            </div>
+            <div class="stats-pane pane">
+                <div id="stats" style="height: 100%; display: none; font-size: 13px;"></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="main-mvc-sections-template" type="text/x-handlebars-template">
+    <div class="layout-container">
+        <div class="code-container">
+            <div class="top-code-container">
+                <div class="model-container section pane">
+                    <textarea id="Model" class="code-block">{{codeBlocks.Model}}</textarea>
+                    <span class="section-label" style="opacity: 0.8;">Model</span>
+                </div>
+                <div class="view-container section pane">
+                    <textarea id="View" class="code-block" mode="razor">{{codeBlocks.View}}</textarea>
+                    <span class="section-label" style="opacity: 0.8;">View</span>
+                </div>
+            </div>
+            <div class="bottom-code-container">
+                <div class="controller-container section pane">
+                    <textarea id="Controller" class="code-block">{{codeBlocks.Controller}}</textarea>
+                    <span class="section-label" style="opacity: 0.8;">Controller</span>
+                </div>
+                <div class="page-container section pane" style="overflow: hidden;">
+                    <iframe id="mvc-output-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+                    <a href="javascript: void(0);" class="section-label show" style="opacity: 0.8;" id="view-fullscreen" title="View in Full Screen" target="_blank">View in Full Screen</a>
+                </div>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="output-pane pane">
+                <div id="output" class="output"></div>
+                <div id="input" contenteditable="true"></div>
+            </div>
+            <div class="stats-pane pane">
+                <div id="stats" style="height: 100%; display: none; font-size: 13px;"></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+
+<script id="main-mvc-tabs-template" type="text/x-handlebars-template">
+    <div class="layout-container">
+        <div class="code-container">
+            <div class="tabs-code-container pane" style="overflow: hidden; background-color: #fafafa;border: none;">
+                <ul class="nav nav-tabs dnf-tabs">
+                    <li class="active"><a href="#tabs-1" data-toggle="tab">Model</a></li>
+                    <li><a href="#tabs-2" data-toggle="tab">View</a></li>
+                    <li><a href="#tabs-3" data-toggle="tab">Controller</a></li>
+                </ul>
+
+                <div class="tab-content" style="height: 100%;padding-bottom: 35px;padding-top:0px;">
+                    <div class="tab-pane active" id="tabs-1">
+                        <textarea id="Model" class="code-block">{{codeBlocks.Model}}</textarea>
+                    </div>
+                    <div class="tab-pane" id="tabs-2">
+                        <textarea id="View" class="code-block" mode="razor">{{codeBlocks.View}}</textarea>
+                    </div>
+                    <div class="tab-pane" id="tabs-3">
+                        <textarea id="Controller" class="code-block">{{codeBlocks.Controller}}</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="page-container pane">
+                <iframe id="mvc-output-iframe" src="" width="100%" height="500px" frameborder="0"></iframe>
+                <a href="javascript: void(0);" class="section-label show" style="opacity: 0.8;" id="view-fullscreen" title="View in Full Screen" target="_blank">View in Full Screen</a>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="output-pane pane">
+                <div id="output" class="output"></div>
+                <div id="input" contenteditable="true"></div>
+            </div>
+            <div class="stats-pane pane">
+                <div id="stats" style="height: 100%; display: none; font-size: 13px;"></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+
+<script id="main-nancy-sections-template" type="text/x-handlebars-template">
+   <div class="layout-container">
+        <div class="code-container">
+            <div class="top-code-container">
+                <div class="model-container section pane">
+                    <textarea id="Model" class="code-block">{{codeBlocks.Model}}</textarea>
+                    <span class="section-label" style="opacity: 0.8;">Model</span>
+                </div>
+                <div class="view-container section pane">
+                    <textarea id="View" class="code-block" mode="razor">{{codeBlocks.View}}</textarea>
+                    <span class="section-label" style="opacity: 0.8;">View</span>
+                </div>
+            </div>
+            <div class="bottom-code-container">
+                <div class="controller-container section pane">
+                    <textarea id="Controller" class="code-block">{{codeBlocks.Controller}}</textarea>
+                    <span class="section-label" style="opacity: 0.8;">Module</span>
+                </div>
+                <div class="page-container section pane" style="overflow: hidden;">
+                    <iframe id="mvc-output-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+                    <a href="javascript: void(0);" class="section-label show" style="opacity: 0.8;" id="view-fullscreen" title="View in Full Screen" target="_blank">View in Full Screen</a>
+                </div>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="output-pane pane">
+                <div id="output" class="output"></div>
+                <div id="input" contenteditable="true"></div>
+            </div>
+            <div class="stats-pane pane">
+                <div id="stats" style="height: 100%; display: none; font-size: 13px;"></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+
+<script id="main-nancy-tabs-template" type="text/x-handlebars-template">
+    <div class="layout-container">
+        <div class="code-container">
+            <div class="tabs-code-container pane" style="overflow: hidden; background-color: #fafafa;border: none;">
+                <ul class="nav nav-tabs dnf-tabs">
+                    <li class="active"><a href="#tabs-1" data-toggle="tab">Model</a></li>
+                    <li><a href="#tabs-2" data-toggle="tab">View</a></li>
+                    <li><a href="#tabs-3" data-toggle="tab">Module</a></li>
+                </ul>
+
+                <div class="tab-content" style="height: 100%;padding-bottom: 35px;padding-top:0px;">
+                    <div class="tab-pane active" id="tabs-1">
+                        <textarea id="Model" class="code-block">{{codeBlocks.Model}}</textarea>
+                    </div>
+                    <div class="tab-pane" id="tabs-2">
+                        <textarea id="View" class="code-block" mode="razor">{{codeBlocks.View}}</textarea>
+                    </div>
+                    <div class="tab-pane" id="tabs-3">
+                        <textarea id="Controller" class="code-block">{{codeBlocks.Controller}}</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="page-container pane">
+                <iframe id="mvc-output-iframe" src="" width="100%" height="500px" frameborder="0"></iframe>
+                <a href="javascript: void(0);" class="section-label show" style="opacity: 0.8;" id="view-fullscreen" title="View in Full Screen" target="_blank">View in Full Screen</a>
+            </div>
+        </div>
+        <div class="output-container">
+            <div class="output-pane pane">
+                <div id="output" class="output"></div>
+                <div id="input" contenteditable="true"></div>
+            </div>
+            <div class="stats-pane pane">
+                <div id="stats" style="height: 100%; display: none; font-size: 13px;"></div>
+                <div id="stats-loader" style="display: none;">
+                    <div class="bg"></div>
+                    <div class="spin"></div>
+                </div>
+            </div>
+        </div>
+		
+    </div>
+</script>
+
+
+<div id="sponsor-0" class="container-sponsor container-sponsor-zzzprojects" style="display: none;">
+	<a href="https://entityframework-classic.net/" onclick="ga('send', 'event', { eventAction: 'sponsor-ef-classic' });">
+		<img src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/zzzprojects-logo-50x36.png">
+		<div class="text">
+			Entity Framework Classic = EF6 Fork with Major Improvements
+			<span>.NET Core Support | New Features | Performance Enhancement</span>
+    </div>
+		<span class="link">Try It</span>
+	</a>
+</div>
+
+<div id="sponsor-1" class="container-sponsor container-sponsor-zzzprojects" style="display: none;">
+	<a href="https://entityframework-extensions.net/" onclick="ga('send', 'event', { eventAction: 'sponsor-ef-extensions' });">
+		<img src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/zzzprojects-logo-50x36.png">
+		<div class="text">
+			Entity Framework Extensions - Fastest Way of Inserting Entities
+			<span>Over 3000 companies use EF Extensions to improve their application performance.</span>
+		</div>
+		<span class="link">Learn More</span>
+	</a>
+</div>
+
+<div id="sponsor-2" class="container-sponsor container-sponsor-zzzprojects" style="display: none;">
+	<a href="https://entityframework-extensions.net/batch-savechanges?z=f-1" onclick="ga('send', 'event', { eventAction: 'sponsor-ef-extensions' });">
+		<img src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/zzzprojects-logo-50x36.png">
+		<div class="text">
+			Entity Framework Extensions - Promotion for $79
+			<span>Improve your saving performance by 500% with the BatchSaveChanges features.</span>
+		</div>
+		<span class="link">Learn More</span>
+	</a>
+</div>
+
+<div id="sponsor-3" class="container-sponsor container-sponsor-pandaflow" style="">
+	<a href="https://www.pandaflow.io/" onclick="ga('send', 'event', { eventAction: 'sponsor-pandaflow' });">
+		<img src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/pandaflow.png" style="height: 70px" alt="Integrate Salesforce and Quickbooks" title="Integrate Salesforce and Quickbooks">
+	</a>
+</div>
+
+
+
+	</div>
+</div>
+
+
+
+	</div>
+
+	<script>
+		if (!window.location.origin) {
+			window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+		}
+		function copyToClipboard(element) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val($(element).val()).select();
+			document.execCommand("copy");
+			$temp.remove();
+		}
+	</script>
+	<script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/jquery"></script>
+
+	<script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/jqueryval"></script>
+
+
+	
+    <script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/utils"></script>
+
+	
+			
+		<div class="modal-content" id="viewil-dialog" style="display: none; width:1000px;">
+			<div class="modal-header">
+				<button type="button" class="close" id="viewil-dialog-hide">×</button>
+				<h4 class="modal-title" id="viewillabel">View IL Code</h4>
+			</div>
+			<div class="modal-body">
+			</div>
+		</div>
+	<script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/jqueryui"></script>
+
+	<script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/codemirror"></script>
+
+    <script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/jqueryval"></script>
+
+    <script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/common"></script>
+
+	<script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/desktop"></script>
+
+
+	<script type="text/javascript">
+
+		window.TogetherJSConfig = {
+			hubBase: "https://togetherjs.dotnetfiddle.net"
+		};
+		env.siteMode = siteModes.full;
+		env.auth = false;
+	</script>
+    <script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/togetherjs-min.js"></script>
+
+	
+    
+	<script type="text/javascript">
+
+
+		var initVersions = [
+		];
+
+		function tryGetFromStorage(fiddleId, blockName) {
+			
+			if (fiddleId && fiddleId.length && $.cookie && ($.cookie("OriginalFiddleId")==null || $.cookie("OriginalFiddleId")==fiddleId) && $.cookie("UseLocalStorage") == "true" && window.location.pathname == "/" && (!window.location.search || !window.location.search.length)) {
+				var code = localStorage.getItem(blockName);
+				if (code != null && code != "" && code != "null") {
+					localStorage.removeItem(blockName);
+					$.removeCookie(blockName);
+					return code;
+				}
+			}
+			return $('#Original' + blockName).val();
+		}
+		
+		function tryGetCompilerFromCookies(fiddleId, compiler) {
+			if(!fiddleId || !fiddleId.length)//fiddle constructed by url params, so do not use cookies
+				return compiler;
+			
+			if ($.cookie && $.cookie("Compiler") && $.cookie("UseLocalStorage") == "true" && window.location.pathname == "/" && (!window.location.search || !window.location.search.length)) {
+				var comp = $.cookie("Compiler");
+				$.removeCookie("Compiler");
+				return comp;
+			}
+
+			return compiler;
+		}
+
+		$(document).ready(function() {
+			nugetPackageManager.init(initVersions);
+
+
+				
+			var comp = tryGetCompilerFromCookies('srx9kM', 'Net45');
+			fiddle.init({
+                fiddleId: 'srx9kM',
+            	language: 'CSharp',
+				compiler: comp,
+				ownerId:90505,
+            	ownerName: 'Alen Vadassery',
+                projectType: 'Console',
+                layoutType: '',
+				codeBlocks: { 'Console': tryGetFromStorage('srx9kM', 'Console') },
+
+                isAutoRun: 'False'.toLowerCase() == 'true'
+            });
+			
+
+			fiddle.isInUserFiddles(false);
+
+			fiddle.render();
+
+
+			
+			fiddle.initMeta(false, false);
+			
+		});
+
+		$(function() {
+
+			// Label events for Mvc sections layout
+			$('body').on('mouseenter', '.section', function() {
+				var obj = $(this).find('.section-label');
+
+				if ($(obj).hasClass('show'))
+					$(obj).css('opacity', 1);
+				else
+					$(obj).stop(true, true).fadeOut(500);
+			});
+			$('body').on('mouseleave', '.section', function() {
+				var obj = $(this).find('.section-label');
+
+				if ($(obj).hasClass('show'))
+					$(obj).css('opacity', 0.8);
+				else
+					$(obj).stop(true, true).fadeIn(500);
+			});
+
+			// For Mvc tabs layout
+			$('body').on('shown.bs.tab', 'a[data-toggle="tab"]', function(e) {
+				var href = $(e.target).attr('href');
+				var id = $('.tab-content ' + href + ' textarea').attr('id');
+
+				var editors = fiddle.getEditors();
+				editors[id].refresh();
+			});
+
+			// Widget Builder
+			$('#widget-builder').click(function(e) {
+				e.preventDefault();
+				var self = this;
+				var url = self.href;
+
+				$("#widget-builder-iframe").animate({ opacity: 0 }, { duration: 10, queue: true });
+
+				if ($("#widget-builder-iframe").attr("src") != url) {
+					$("#widget-builder-iframe").attr("src", url);
+				}
+
+				$("#widget-builder-modal").modal("show");
+
+				$("#widget-builder-iframe").delay(600).animate({ opacity: 1 }, { duration: 200, queue: true });
+
+			});
+
+			function closeSidebar() {
+				$('.sidebar').animate({
+					left: '-180px'
+				}, 200);
+			}
+
+			function openSidebar() {
+				$('.sidebar').animate({
+					left: '0px'
+				}, 200);
+			}
+
+			$('body').on('click', '.expander', function(ev) {
+				ev.stopPropagation();
+
+				openSidebar();
+			});
+
+			$('body').on('click', '.sidebar', function(ev) {
+				ev.stopPropagation();
+			});
+
+			$('body').click(function() {
+
+				if (!$('.main').hasClass('docked')) closeSidebar();
+			});
+
+			$('body').on('click', '.sidebar .btn-sidebar-toggle', function() {
+				var self = this;
+				var isResize = $('.main').hasClass('docked');
+
+				$('.main').removeClass('docked');
+
+				closeSidebar();
+
+				if (isResize)
+					$(window).trigger('resize');
+			});
+
+			$('body').on('click', '.sidebar .btn-sidebar-pin', function() {
+				var self = this;
+
+				if ($('.main').hasClass('docked')) $('.main').removeClass('docked');
+				else $('.main').addClass('docked');
+
+				$(window).trigger('resize');
+			});
+
+
+		});
+		
+
+		$.validator.setDefaults({
+			highlight: function (element) {
+				$(element).closest(".form-group").addClass("has-error");
+				//$(element).closest(".form-group").removeClass("has-success");
+			},
+			unhighlight: function (element) {
+				$(element).closest(".form-group").removeClass("has-error");
+				//$(element).closest(".form-group").addClass("has-success");
+			},
+			errorClass: 'help-block',
+			showErrors: function (errorMap, errorList) {
+				var i, elements;
+
+				for (i = 0, elements = this.validElements() ; elements[i]; i++) {
+					var $element = $(elements[i]);
+					var $group = $element.closest(".form-group");
+					$group.find(".field-validation-error").each(function () {
+						$(this).remove();
+					});
+					this.settings.unhighlight.call(this, elements[i], this.settings.errorClass, this.settings.validClass);
+				}
+
+				$.each(errorList, function (ix, v) {
+					var $element = $(v.element);
+					var $group = $element.closest(".form-group");
+					$group.find(".field-validation-error").each(function () {
+						$(this).remove();
+					});
+
+					$group.append($("<span>").addClass("field-validation-error help-block").append(v.message));
+					$.validator.defaults.highlight(v.element);
+				});
+
+				this.toHide = this.toHide.not(this.toShow);
+				this.hideErrors();
+				this.addWrapper(this.toShow).show();
+			}
+		});
+		
+		var setPopupStatus = function (status) {
+			if (status) {
+				//continue
+				$.ajax({
+					url: "/LogIn/RemoteLogin",
+					type: "POST",
+					data: JSON.stringify({ loginTypeId: loginType }),
+					dataType: 'json',
+					contentType: "application/json; charset=utf-8",
+					success: function (resp) {
+						if (resp.IsSuccess) {
+							//
+						}
+					}
+				});
+			}
+		};
+
+		var loginType;
+	</script>
+
+	<script src="C%23%20PlayGround%20|%20C%23%20Online%20Compiler%20|%20.NET%20Fiddle_files/bootstrap.js"></script>
+
+
+
+		<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-45542977-1', 'dotnetfiddle.net');
+			ga('send', 'pageview');
+		</script>
+
+		<!-- UserVoice JavaScript SDK (only needed once on a page) -->
+		<script>(function () { var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true; uv.src = '//widget.uservoice.com/zRSaFn7aHgIFLfnHWxw5EA.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s) })()</script>
+		<!-- A function to launch the Classic Widget -->
+		<script>
+			UserVoice = window.UserVoice || [];
+			function showClassicWidget() {
+				UserVoice.push(['showLightbox', 'classic_widget', {
+					mode: 'support',
+					primary_color: '#cc6d00',
+					link_color: '#007dbf'
+				}]);
+			}
+		</script>
+
+	
+	<style id="profiler-minimizer-css">
+		.profiler-results {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" id="profiler-minimizer">
+		$(document).ready(function () {
+			 var e = function () {
+			 	var e = $(".profiler-results");
+			 	if (e.length == 0) return false;
+			 	e.addClass("profiler-min");
+				 return true;
+			 };
+			
+			var t = function () {
+				var n = e();
+				if (n) {
+					$("#profiler-minimizer").remove(); $("#profiler-minimizer-css").remove();
+					return;
+				}
+				setTimeout(t, 50);
+			};
+			t();
+		})
+	</script>
+	
+	<script>
+		// script to dramatically reduce bounce rate
+		setTimeout(gaIsActive, 20000);
+		setTimeout(gaIsActive, 60000);
+		setTimeout(gaIsActive, 90000);
+		setTimeout(gaIsActive, 120000);
+		setTimeout(gaIsActive, 150000);
+
+		function gaIsActive() {
+			if (!document.hidden) ga('send', 'event', { eventAction: 'TimeOnPage' });
+		}
+	</script>
+
+
+
+</body></html>
