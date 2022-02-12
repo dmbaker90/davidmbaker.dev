@@ -452,7 +452,7 @@ title: David Baker
             <div class="row">
                 {% for post in site.posts limit: 3 %}
                 <div class="blog-container col-md-4">
-                    <div class="pointer home-blog-card" onclick="location.href='{{post.url}}';">
+                    <div class="pointer home-blog-card break-word" onclick="location.href='{{post.url}}';">
                         <h2>{{ post.title }}</h2>
                         <p>{{ post.excerpt }}</p>
                         <a href="{{post.url}}">... read more</a>

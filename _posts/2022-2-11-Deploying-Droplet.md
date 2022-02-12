@@ -34,10 +34,11 @@ Like I said there are a couple of easier alternatives including the cloud hosted
 2. The pricing is *better* than the bigger cloud platforms for small vms. The smallest DO droplet comes with 1GB memory for $5 a month.  Azure is $4.57 for 500MB and Google is $5.49 for 614MB.
 3. The giant cloud platforms have the smaller VMs buried in hundreds of server configurations and pricing options.  Everything is clearly targeted to any granular configuration an enterprise might need.
 4. The giant cloud platforms have so many options that the pricing changes violently when you click anything.  Look at what happened when I accidentally clicked "Memory Optimized" while setting up my $5 Google Cloud VM.
-   ![Google Cloud Pricing](/assets/images/posts/GCP1.png "Google Cloud Pricing")
+   ![Google Cloud Pricing](/assets/images/posts/GCP1.png "Google Cloud Pricing"){:width="100%"}
+
    This type of stuff annoys the shit out of me.  Who is setting up a $38,000 a month server in the same place they set up a $5 / month server?
 
-Alright, let's get started.
+Anyway, that's the type of stuff that leads me to the simplicity of Digitial Ocean. Alright, let's get started.
 
 ## Create your server
 1. Refer to this documentations: [Set up a Production-Ready Droplet ](https://docs.digitalocean.com/tutorials/recommended-droplet-setup/)
