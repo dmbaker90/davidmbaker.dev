@@ -138,7 +138,7 @@ sudo chown -R dave:www-data /var/www/domain.com
 sudo chmod -R 755 /var/www/domain.com/
 ~~~
 
-## Congfigure NGINX
+## Configure NGINX
 1. Follow the official nginx documentation to install on Ubuntu: [Official Debian/Ubuntu packages](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)#official-debian-ubuntu-packages
 2. Setup Server Blocks, we are going to need one for the api and one for the UI: [How To Install Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04#step-5-%E2%80%93-setting-up-server-blocks-recommended)
  * I needed this fix on Ubuntu: [StackOverflow](https://stackoverflow.com/questions/17413526/nginx-missing-sites-available-directory/17415606#17415606)
