@@ -30,7 +30,7 @@ In the past I toyed with a tool called [NewsAPI](https://newsapi.org), a headlin
 
 The immediate problem... is that I burned through my 1000 free api calls just while testing.  Every time you move the bias slider it burns an API call, and the purpose of this app was to use it often to compare headlines.  There's no good solution to this, so in my mind I have a few options:
 1. Cache the results in a database so I don't burn so many API calls.  This kind of breaks the live news concept and I don't like it.  It also wouldn't work well with a wildcard news search that I have.
-2. Become my own news aggregator.  Use RSS feeds to save headlines to my database from the most common news sources and search my own database.  I don't really feel like doing this though to be honest.
+2. Become my own news aggregator.  Use RSS feeds to save headlines to my database from the most common news sources and search my own database.  I don't really feel like doing this though to be honest. (UPDATE: [This is exactly what I did.](https://www.davidmbaker.dev/2022/03/01/Newsbot-Part-3.html))
 3. If this site doesn't get a lot of traffic, just leave it on the Free Tier and use it as a portfolio project on my resume.  Let it break after 1000 calls a month.
 4. If this site *does* get a lot of traffic, the $6 / 1000 calls is going to scale poorly and get expensive.  My other option is to monitize it and depending on the volume move it over to the NewsApi $450 / 250,000 api calls a month option.
 
