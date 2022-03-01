@@ -5,5 +5,7 @@
       "title": "posts",
       "path": "[[workspace]]/assets/images/posts"
     }
-  ]
+  ],
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.framework.id": "other"
 }

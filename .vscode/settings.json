@@ -5,7 +5,5 @@
         "titleBar.activeBackground": "#00ff3756",
         "titleBar.inactiveBackground": "#00ff3756"
     },
-    "frontMatter.framework.id": "other",
-    "frontMatter.content.publicFolder": "",
     "[markdown]": {},
 }
