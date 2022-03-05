@@ -2,6 +2,8 @@ collections:
   authors:
     output: true
 
+url: "davidmbaker.dev"
+
 defaults:
   - scope:
       path: ""

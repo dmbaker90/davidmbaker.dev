@@ -3,6 +3,7 @@ layout: post
 author: David
 tags: breakingnewsbot
 title: Breaking News Bot Development Part 3
+comments: true
 ---
 
 This is the 3rd and final post on my [series](https://www.davidmbaker.dev/tags#tag-breakingnewsbot) about my [Breaking News Bot](https://www.breakingnewsbot.com) App, a news app with a bias slider to observe how political spin changes the narrative of certain topics. This post could also be titled "How Not to Release an App" or "Don't be Lazy". In my [original post](https://www.davidmbaker.dev/2021/11/20/Lets-Create-A-Biased-News-App.html) I mentioned how I used the Bing News API because I was trying to avoid the work of becoming my own news aggregator for this purpose. Both the idea and the code was simple and I didn't want to over complicate it. The pricing of the Bing API at $6 for 1000 api calls is something I new wouldn't scale well but if this didn't generate interest or traffic then it wouldn't matter much anyway. In fact, I had the app up a few months (with miniaml traffic) and received Azure bills for .17 cents / month and .30 cents per month. In order to reduce that potential bill even further I added client-side caching, so any topic/bias combination searched by a client n number of times would only burn 1 api call. In order to determine if I could be done with this app or have to re-engineer it, I posted it on reddit to gauge interest.
