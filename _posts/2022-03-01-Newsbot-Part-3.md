@@ -3,6 +3,7 @@ layout: post
 author: David
 tags: breakingnewsbot
 title: Breaking News Bot Development Part 3
+description: Building a biased news app, part 3.  Reddit response and optimizations.
 comments: true
 ---
 
