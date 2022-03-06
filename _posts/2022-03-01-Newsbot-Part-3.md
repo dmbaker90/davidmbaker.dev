@@ -42,7 +42,7 @@ RSS is a standard so you'd think it would be pretty trivial to write code to par
 7. Digg uses an `<enclosure>` tag for the image
 8. NPR has the image embedded inside of an `<content:encoded>` tag using html elements.  Aggh
 
-RSS problems continue even without image standars:
+RSS problems continue even without image standards:
 1. Washington post RSS feed does not use standard date formats. I found a workaround thanks to Microsoft Documentation [workaround](https://docs.microsoft.com/en-US/troubleshoot/developer/dotnet/framework/general/rss20feedformatter-throw-exception) but man what the hell.
 2. Forbes appears to have RSS feeds that haven't been updated in ages
 3. USA today includes clutter in their feeds.  Just "News Items" that link to their categories
