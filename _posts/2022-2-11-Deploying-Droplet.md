@@ -5,7 +5,7 @@ tags: digitalocean linux code angular dotnet breakingnewsbot
 title: Deploy a .NET 6 Webapi and Angular UI to Ubuntu Server
 ---
 
-This is part 2 of my [breakingnewsbot.com](breakingnewsbot.com) project. This post is mostly on the infrastructure I used to host it. I will walk you through how to set up a .NET 6 Web Api backend and Angular Front end application on a $5/month DigitalOcean droplet running Ubuntu 20.04. More realistically this is going to serve as my own reference when I forget how I configured my server and need to do it again.
+This is part 2 of my [Breaking News Bot](https://www.breakingnewsbot.com) project. This post is mostly on the infrastructure I used to host it. I will walk you through how to set up a .NET 6 Web Api backend and Angular Front end application on a $5/month DigitalOcean droplet running Ubuntu 20.04. More realistically this is going to serve as my own reference when I forget how I configured my server and need to do it again.
 
 My problem was that I had to refer to many different pages and guides to do this.  Rather than repeat everything those guides said, this page is going to be a reference and checklist of which guides to follow and what needs to be done.  But first I wanted to talk you out of this.
 

@@ -3,6 +3,7 @@ layout: post
 author: David
 tags: jekyll code
 title: "Jekyll: Uncaught SyntaxError: unexpected token: identifier"
+description: "How to fix Jekyll unexpected token: identifyer"
 ---
 
 If you encounter this in Jekyll where a blog post seemingly is not working when clicking on it, it might be because you have an apostraphe in the file name, like this:

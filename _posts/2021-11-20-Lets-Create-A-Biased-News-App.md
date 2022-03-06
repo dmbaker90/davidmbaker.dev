@@ -2,6 +2,7 @@
 layout: post
 author: David
 tags: code breakingnewsbot
+description: Biased News App that shows news items by political bias
 ---
 
 This post is going to cover some of the challenges I faced when making my biased news aggregator [Breaking News Bot](https://www.breakingnewsbot.com).  I will probably make a follow up post about how it was coded.

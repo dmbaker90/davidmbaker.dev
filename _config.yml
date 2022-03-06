@@ -3,6 +3,7 @@ collections:
     output: true
 
 url: "https://www.davidmbaker.dev"
+description: "My name is David Baker and I'm a full-stack developer. View my portfolio, blog, gallery."
 
 defaults:
   - scope:
