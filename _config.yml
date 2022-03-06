@@ -2,7 +2,7 @@ collections:
   authors:
     output: true
 
-url: "davidmbaker.dev"
+url: "https://www.davidmbaker.dev"
 
 defaults:
   - scope:
