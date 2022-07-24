@@ -1,34 +1,37 @@
 <!-- START THE NAVBAR SECTION -->
 
-{% include base.html %}
-
-{% if page.url == '/' %}
-{% assign navBarClasses = "navbar navbar-expand-lg navbar-dark menu position-absolute" %}
-{% else %}
-{% assign navBarClasses = "navbar navbar-expand-lg navbar-dark menu bg-black position-sticky" %}
-{% endif %}
+{% include base.html %} {% if page.url == '/' %} {% assign navBarClasses =
+"navbar navbar-expand-lg navbar-dark menu position-absolute" %} {% else %} {%
+assign navBarClasses = "navbar navbar-expand-lg navbar-dark menu bg-black
+position-sticky" %} {% endif %}
 
 <nav class="{{navBarClasses}}">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="{{base}}/assets/images/david_baker.svg" alt="logo image">
+      <img src="{{base}}/assets/images/david_baker.svg" alt="logo image" />
       <!-- <span>David</span> -->
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarSupportedContent"
+    >
       <ul class="navbar-nav">
-
         {% for item in site.data.navigation %}
         <li class="nav-item">
-
-          {% if page.url==item.link or page.url==item.url %}
-          {% assign navLinkClasses = "nav-link active" %}
-          {% else %}
-          {% assign navLinkClasses = "nav-link" %}
-          {% endif %}
+          {% if page.url==item.link or page.url==item.url %} {% assign
+          navLinkClasses = "nav-link active" %} {% else %} {% assign
+          navLinkClasses = "nav-link" %} {% endif %}
 
           <a class="{{navLinkClasses}}" href="{{ item.link }}">{{item.name}}</a>
         </li>
@@ -55,16 +58,15 @@
         <li class="nav-item">
           <a class="nav-link" href="/#contact">Contact</a>
         </li> -->
-
       </ul>
-      <a target="_blank"
+      <!-- <a target="_blank"
         href="https://docs.google.com/document/d/16bnfc-lctNWxQeSi5fXEr8-MD7myj1t2rw-IhhRx9eY/edit?usp=sharing">
         <button type="button" class="rounded-pill btn-rounded">Resume
           <span>
             <i class="fas fa-download"></i>
           </span>
         </button>
-      </a>
+      </a> -->
       <!-- <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
